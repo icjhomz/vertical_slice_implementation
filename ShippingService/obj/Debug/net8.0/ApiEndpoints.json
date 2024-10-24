@@ -1,0 +1,286 @@
+[
+  {
+    "ContainingType": "ShippingService.Features.v1.CreateShipment.CreateShipmentEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v1/shipments",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v1.CreateShipment.CreateShipmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v1.GetShipmentByNumber.GetShipmentByNumberEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v1/shipments/{shipmentNumber}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v1.UpdateShipmentStatus.UpdateShipmentStatusEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v1/shipments/update-status/{shipmentNumber}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v1.UpdateShipmentStatus.UpdateShipmentStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v2.CreateShipment\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__7_0",
+    "RelativePath": "api/v2/shipments",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v2.CreateShipment\u002BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v2.GetShipmentByNumber\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__4_0",
+    "RelativePath": "api/v2/shipments/{shipmentNumber}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v2.UpdateShipmentStatus\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__4_0",
+    "RelativePath": "api/v2/shipments/update-status/{shipmentNumber}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v2.UpdateShipmentStatus\u002BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v3.CreateShipment.CreateShipmentEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v3/shipments",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v3.CreateShipment.CreateShipmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v3.GetShipmentByNumber.GetShipmentByNumberEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v3/shipments/{shipmentNumber}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v3.UpdateShipmentStatus.UpdateShipmentStatusEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v3/shipments/update-status/{shipmentNumber}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v3.UpdateShipmentStatus.UpdateShipmentStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v4.CreateShipment.CreateShipmentEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v4/shipments",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v4.CreateShipment.CreateShipmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v4.GetShipmentByNumber.GetShipmentByNumberEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v4/shipments/{shipmentNumber}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShippingService.Features.v4.UpdateShipmentStatus.UpdateShipmentStatusEndpoint",
+    "Method": "Handle",
+    "RelativePath": "api/v4/shipments/update-status/{shipmentNumber}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ShippingService.Features.v4.UpdateShipmentStatus.UpdateShipmentStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

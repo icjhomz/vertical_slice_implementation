@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
+using MediatR;
 using ShippingService;
-using ShippingService.Database;
 using ShippingService.Features.v2;
-using ShippingService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddHostLogging();
@@ -13,11 +11,16 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-	var dbContext = scope.ServiceProvider.GetRequiredService<EfCoreDbContext>();
-	await dbContext.Database.MigrateAsync();
+	var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
 
-	var seedService = scope.ServiceProvider.GetRequiredService<SeedService>();
-	await seedService.SeedDataAsync();
+	var shipmentNumberHardCoded = "4380245613123";
+
+    var response = await mediator.Send(new GetShipmentByNumber.Query(shipmentNumberHardCoded));
+
+    if (response != null)
+    {
+        Console.WriteLine($"Shipment found at startup: {response.Number}");
+    }
 }
 
 if (app.Environment.IsDevelopment())
